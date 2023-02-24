@@ -15,10 +15,9 @@ class Products extends StatelessWidget {
                     children: <Widget>[
                       Image.asset('assets/tree-736885__480.jpg'),
                       Container(
-                        padding: const EdgeInsets.all(10.0),
-                        color: const (),
-                        child: Text(element)
-                        )
+                          padding: const EdgeInsets.all(10.0),
+                          //color: const (),
+                          child: Text(element))
                     ],
                   ),
                 ),
