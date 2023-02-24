@@ -9,11 +9,64 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.amber,
+      ),
       home: Scaffold(
+        drawer: SafeArea(
+          child: Drawer(
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  GestureDetector(
+                    onTap: () {},
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Container(
+                        child: Text('Sjkfgsdgfhs'),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      child: Text('Sjkfgsdgfhs'),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      child: Text('Sjkfgsdgfhs'),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      child: Text('Sjkfgsdgfhs'),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      child: Text('Sjkfgsdgfhs'),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      child: Text('Sjkfgsdgfhs'),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
         appBar: AppBar(
           title: const Text('EasyList'),
         ),
-        body: ProductManager('Food Tester'),
+        body: SingleChildScrollView(child: ProductManager('Food Tester')),
       ),
     );
   }

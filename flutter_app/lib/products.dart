@@ -10,11 +10,17 @@ class Products extends StatelessWidget {
     return Column(
       children: products
           .map((element) => Card(
-                child: Column(
-                  children: <Widget>[
-                    Image.asset('assets/tree-736885__480.jpg'),
-                    Text(element)
-                  ],
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: <Widget>[
+                      Image.asset('assets/tree-736885__480.jpg'),
+                      Container(
+                        padding: const EdgeInsets.all(10.0),
+                        color: const (),
+                        child: Text(element)
+                        )
+                    ],
+                  ),
                 ),
               ))
           .toList(),

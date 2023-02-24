@@ -21,7 +21,10 @@ class _ProductManagerState extends State<ProductManager> {
     _products.add(widget.startingProduct);
     super.initState();
   }
-
+  @override
+  void didUpdateWidget(ProductManager oldWidget) {
+    super.didUpdateWidget(oldWidget);
+  }
   @override
   Widget build(BuildContext context) {
     return Column(children: [
