@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_app/product_manager.dart';
 
@@ -18,45 +20,64 @@ class MyApp extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  GestureDetector(
-                    onTap: () {},
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        child: Text('Sjkfgsdgfhs'),
-                      ),
-                    ),
+                children: const [
+                  ListTile(
+                    tileColor: Color(0xFFFF9000),
+                    focusColor: Color(0xFFFF9000),
+                    hoverColor: Color(0xFFFF9000),
+                    title: Text('Home'),
+                    leading: Icon(Icons.home),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      child: Text('Sjkfgsdgfhs'),
-                    ),
+                  ListTile(
+                    title: Text('Hot Spots'),
+                    leading: Icon(Icons.fire_extinguisher),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      child: Text('Sjkfgsdgfhs'),
-                    ),
+                  Divider(thickness: 1),
+                  ListTile(
+                    title: Text('Local Files'),
+                    leading: Icon(Icons.download),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      child: Text('Sjkfgsdgfhs'),
-                    ),
+                  ListTile(
+                    title: Text('Marked Files'),
+                    leading: Icon(Icons.tag),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      child: Text('Sjkfgsdgfhs'),
-                    ),
+                  ListTile(
+                    title: Text('Cloud Storage'),
+                    leading: Icon(Icons.cloud),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      child: Text('Sjkfgsdgfhs'),
-                    ),
+                  ListTile(
+                    title: Text('Hot Spots'),
+                    leading: Icon(Icons.fire_extinguisher),
+                  ),
+                  Divider(thickness: 1),
+                  ListTile(
+                    title: Text('Local Files'),
+                    leading: Icon(Icons.download),
+                  ),
+                  ListTile(
+                    title: Text('Marked Files'),
+                    leading: Icon(Icons.tag),
+                  ),
+                  ListTile(
+                    title: Text('Cloud Storage'),
+                    leading: Icon(Icons.cloud),
+                  ),
+                  ListTile(
+                    title: Text('Hot Spots'),
+                    leading: Icon(Icons.fire_extinguisher),
+                  ),
+                  Divider(thickness: 1),
+                  ListTile(
+                    title: Text('Local Files'),
+                    leading: Icon(Icons.download),
+                  ),
+                  ListTile(
+                    title: Text('Marked Files'),
+                    leading: Icon(Icons.tag),
+                  ),
+                  ListTile(
+                    title: Text('Cloud Storage'),
+                    leading: Icon(Icons.cloud),
                   ),
                 ],
               ),
